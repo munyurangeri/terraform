@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  tf:
+    image: hashicorp/terraform:1.5
+    volumes:
+      - .:/infra
+    working_dir: /infra
+    # environment:
+    #   - name=value
